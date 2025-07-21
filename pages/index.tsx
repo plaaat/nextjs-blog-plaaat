@@ -22,7 +22,7 @@ function Home() {
                     <p className="text-xl font-nanum-gothic">
                         {"블로그 아이콘은 GPT의 Dall-E 3으로 만든후 수정을 가했고,"}
                         <br/>
-                        {"Cloudflare 의 Workers 배포로 만들었습니다. "}
+                        {"next.js 의 Vercel 배포로 만들었습니다. "}
                         <br/>
                         <br/>
                         {"25.06.15 부터 시작합니다. 조금씩 더해갈 예정이예요."}

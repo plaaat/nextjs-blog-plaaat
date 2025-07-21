@@ -83,7 +83,7 @@ function Posts({ posts }: PostsProps) {
                 </div>
             </div>
         </>
-    );
+    )
 }
 
 export default Posts;
