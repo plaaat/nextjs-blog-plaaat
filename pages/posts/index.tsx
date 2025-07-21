@@ -29,7 +29,7 @@ export async function getStaticProps() {
         props: {
             posts,
         },
-        revalidate: 180, // 60초마다 페이지를 재생성 (선택 사항)
+        revalidate: 86400,
     };
 }
 
@@ -65,9 +65,8 @@ function Posts({ posts }: PostsProps) {
                     <ul className="space-y-4">
                         {filteredPosts.map(post => (
                             <li key={post.contentnum} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-                                <Link href={`/posts/${post.contentnum}`} legacyBehavior>
-                                    <a className="block">
-                                        <h3 className="text-xl font-semibold text-blue-600 hover:text-blue-800 mb-2">
+                                <Link href={`/posts/${post.contentnum}`} className={'block'}>
+                                    <h3 className="text-xl font-semibold text-blue-600 hover:text-blue-800 mb-2">
                                             {post.title}
                                         </h3>
                                         <div className="flex justify-between text-sm text-gray-600">
@@ -77,7 +76,6 @@ function Posts({ posts }: PostsProps) {
                                             <span>{post.content}</span>
                                             <span>{post.date}</span>
                                         </div>
-                                    </a>
                                 </Link>
                             </li>
                         ))}
