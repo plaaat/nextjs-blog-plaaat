@@ -18,7 +18,8 @@ const categoryData = [
     { id: 0, name: 'All'},
     { id: 1, name: 'PS'},
     { id: 2, name: 'WebDev'},
-    { id: 3, name: 'Other'}
+    { id: 3, name: 'Dev'},
+    { id: 4, name: 'Other'}
 ];
 
 export async function getStaticProps() {
